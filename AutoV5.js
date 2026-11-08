@@ -1628,7 +1628,7 @@
             let totalSeconds = 0;
             if (statsRes.ok) {
                 const statsData = await statsRes.json();
-                totalSeconds += Number(statsData.labelledSeconds) || 0;
+                totalSeconds += Number(statsData.approvedSeconds) || 0;
             }
 
             if (extraRes.ok) {
